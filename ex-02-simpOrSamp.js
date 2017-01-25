@@ -9,20 +9,28 @@
 */
 // INPUT: array of strings
 
-var simpOrSamp = function (firstNameArray){
+var simpOrSamp = function (arrOfStrings){
 
-    for (var indx = 0; indx < firstNameArray.length; indx = indx + 1){
+    var appString = " "
 
-      if (firstNameArray.length < 6) {
-        firstNameArray.push("Sampson");
-      } else {
-        firstNameArray.push("Simpson");
+    for (var i = 0; i < arrOfStrings.length; i++){
+      console.log(i);
+      console.log(arrOfStrings.length);
+
+      if(arrOfStrings[i].length < 7){
+        appString.push (arrOfStrings[i] + "Sampson")
       }
+
+        // var arrOfStringsElement = arrOfStrings.length;
+        // if (arrOfStringsElement >= 6) {
+        //  return [indx] + "Simpson";
+        // } else {
+        //  return [indx] + "Sampson";
     }
+    return appString
 }
 
-
-// OUTPUT: append element
+// OUTPUT: appended string
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 var simpList = [
