@@ -11,23 +11,23 @@
 
 var simpOrSamp = function (arrOfStrings){
 
-    var appString = " "
+    var newArr = []
+
 
     for (var i = 0; i < arrOfStrings.length; i++){
-      console.log(i);
-      console.log(arrOfStrings.length);
+      // console.log(i);
+      // console.log(newArr);
+      // console.log(arrOfStrings[i]) + "Sampson";
 
-      if(arrOfStrings[i].length < 7){
-        appString.push (arrOfStrings[i] + "Sampson")
+      if(arrOfStrings[i].length < 6){
+        newArr.push(arrOfStrings[i] + " Sampson");
+          // console.log(appString);
+          // console.log(arrOfStrings[i]) + "Sampson";
+      } else {
+        newArr.push(arrOfStrings[i] + " Simpson");
       }
-
-        // var arrOfStringsElement = arrOfStrings.length;
-        // if (arrOfStringsElement >= 6) {
-        //  return [indx] + "Simpson";
-        // } else {
-        //  return [indx] + "Sampson";
     }
-    return appString
+    return newArr
 }
 
 // OUTPUT: appended string
@@ -41,6 +41,7 @@ var simpList = [
     "Bart",
     "Maggie"
 ]
+
 
 var modifiedNamesList = simpOrSamp(simpList)
 
