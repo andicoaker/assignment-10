@@ -19,6 +19,8 @@ var reverseString = function (string){
     newString.push(string.charAt(string.length - i));
 
   }
+  var backwardString = newString.join("");
+    console.log(string, backwardString)
    return newString.join("");
 }
 

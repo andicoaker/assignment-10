@@ -17,20 +17,15 @@ var shortiesOnly = function (arrOfStrings){
   for (var i = 0; i < arrOfStrings.length; i++) {
     // console.log("FOR LOOP", i);
 
-
        if(arrOfStrings[i].length < 5){
 
         //  console.log("if", newArr)
         //  console.log(arrOfStrings[i]);
          newArr.push(arrOfStrings[i]);
-
        }
   }
-
   return newArr;
 }
-
-
 
 // OUTPUT: new arry - only strings 4 char or less
 

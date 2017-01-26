@@ -19,7 +19,6 @@ var wordMatchInArray = function (wordToSearch, wordArray){
 
     if (wordToSearch === wordArray[i]) {
       wordFound = true;
-
         // console.log(wordFound);
         // console.log(wordToSearch = wordArray[i]);
     }
