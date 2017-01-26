@@ -9,25 +9,25 @@
 
 // INPUT: string and array
 
-var wordMatchInArray = function (str, arr){
+var wordMatchInArray = function (wordToSearch, wordArray){
 
   var wordFound = false;
 
-
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < wordArray.length; i++) {
       // console.log(i);
       // console.log(wordFound);
-      // console.log(str = arr[i]);
 
-    if (str = arr[i]) {
+    if (wordToSearch === wordArray[i]) {
       wordFound = true;
 
+        // console.log(wordFound);
+        // console.log(wordToSearch = wordArray[i]);
     }
   }
     return wordFound
 }
 
-// OUTPUT: new boolean - if word is found in the array
+// OUTPUT: new boolean - true/false if word found is in the array
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

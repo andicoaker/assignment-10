@@ -11,18 +11,18 @@
 
 var countWordInArray = function (arr, str) {
 
-  var outputNumber = 0
+  var count = 0
 
   for (var i = 0; i < arr.length; i++) {
-    console.log(i);
-    console.log(outputNumber);
+    // console.log(i);
+    // console.log(count);
 
     if(arr[i] === true){
-      outputNumber++;
+      count++;
 
     }
   }
-  return outputNumber
+  return count
 }
 
 
