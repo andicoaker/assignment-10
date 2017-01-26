@@ -9,20 +9,19 @@
 **/
 // INPUT: string & array
 
-var countWordInArray = function (arr, str) {
+var countWordInArray = function (inputWord, arrayOfWords) {
 
-  var count = 0
+  var wordCount = 0
 
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arrayOfWords.length; i++) {
     // console.log(i);
-    // console.log(count);
 
-    if(arr[i] === true){
-      count++;
-
+    if( inputWord === arrayOfWords[i] ){
+        wordCount += 1;
+      // console.log(wordCount);
     }
   }
-  return count
+  return wordCount
 }
 
 
