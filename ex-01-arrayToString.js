@@ -10,6 +10,7 @@
 // INPUT: array values
 
 var arrayToString = function(arrayValue){
+
   var string = '';
 
   for (var indx = 0; indx < arrayValue.length; indx = indx + 1){

@@ -2,18 +2,32 @@
 /**
  * Ex-05 : countWordInArray()
  *
- * Write a function called `countWordInArray` that takes 2 inputs: a string, and an array. 
+ * Write a function called `countWordInArray` that takes 2 inputs: a string, and an array.
  * The function should return a number that is equal to the number of times the string-argument
  * is found in the array.
- * 
+ *
 **/
+// INPUT: string & array
+
+var countWordInArray = function (arr, str) {
+
+  var outputNumber = 0
+
+  for (var i = 0; i < arr.length; i++) {
+    console.log(i);
+    console.log(outputNumber);
+
+    if(arr[i] === true){
+      outputNumber++;
+
+    }
+  }
+  return outputNumber
+}
 
 
 
-
-
-
-
+// OUTPUT: number (equal to # of times string is in the array)
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

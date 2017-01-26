@@ -15,16 +15,12 @@ var wordMatchInArray = function (str, arr){
 
 
   for (var i = 0; i < arr.length; i++) {
-      console.log(i);
-      console.log(wordFound);
-      console.log(str = arr[i]);
-
+      // console.log(i);
+      // console.log(wordFound);
+      // console.log(str = arr[i]);
 
     if (str = arr[i]) {
       wordFound = true;
-    }
-    else {
-      wordFound = false;
 
     }
   }
